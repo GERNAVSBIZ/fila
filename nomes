@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Verificação</title>
+    <!-- Tailwind CSS via CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the checkbox interaction */
+        .checkbox-wrapper:hover {
+            background-color: #f3f4f6;
+        }
+        input[type="checkbox"]:checked + span {
+            text-decoration: line-through;
+            color: #9ca3af;
+        }
+        /* Smooth transition for the text decoration */
+        span {
+            transition: color 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md overflow-hidden my-8">
+        <!-- Header -->
+        <div class="bg-blue-600 p-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Lista de Nomes
+            </h2>
+            <p class="text-blue-100 mt-1 text-sm">Ordem Alfabética</p>
+        </div>
+
+        <!-- List Content -->
+        <div class="divide-y divide-gray-100 max-h-[70vh] overflow-y-auto">
+            
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ALICE SILVA CARVALHO</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ANA LIS</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ARTHUR DINIZ</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ARTHUR MIGUEL</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">Beatriz Gomes</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">BENJAMIM OLIVEIRA</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">Dimas Luíz</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">Enzo Lima Albuquerque</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ESTER PINHEIRO PAIXÃO</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">HEITOR AMARANTE</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">ISABELA MAIA</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">JAMILE FRANCO</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">JOÃO FRANCISCO</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">LOUISE FERREIRA</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">MARCOS MAGNO</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">MARIA LETICIA</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">NICOLAS ARANHA</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">Queren Elias Leite</span>
+            </label>
+
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">THEO BRAZ</span>
+            </label>
+            
+            <label class="checkbox-wrapper flex items-center p-4 cursor-pointer transition-colors duration-200 group">
+                <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                <span class="ml-4 text-gray-700 font-medium group-hover:text-blue-600">Théo Henrique Paiva</span>
+            </label>
+        </div>
+
+        <!-- Footer / Action -->
+        <div class="bg-gray-50 p-4 border-t border-gray-100 flex justify-end">
+            <button onclick="document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = false)" 
+                    class="text-sm text-gray-500 hover:text-blue-600 font-medium focus:outline-none">
+                Reiniciar Lista
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
